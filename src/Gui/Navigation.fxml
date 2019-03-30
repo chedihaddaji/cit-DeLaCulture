@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="700.0" prefWidth="1200.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.NavigationController">
+   <children>
+      <AnchorPane fx:id="navBar" prefHeight="70.0" prefWidth="1200.0">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/bar.png" />
+               </image></ImageView>
+            <ImageView fitHeight="70.0" fitWidth="1200.0" opacity="0.76" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/filter.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="textInput" layoutX="222.0" layoutY="14.0" prefHeight="43.0" prefWidth="298.0" style="-fx-opacity: 0.8; -fx-background-color: #ffffff; -fx-border-color: #ffffff; -fx-border-width: 3; -fx-text-fill: #333333;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></TextField>
+            <Button layoutX="700.0" layoutY="15.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="135.0" style="-fx-background-color: none;" styleClass="btn-menu" text="  Accueil" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/world.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Oswald Regular" size="21.0" />
+               </font></Button>
+            <ImageView fitHeight="59.0" fitWidth="154.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logo.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="519.0" layoutY="14.0" mnemonicParsing="false" onAction="#search" prefHeight="43.0" prefWidth="114.0" style="-fx-background-color: #333333; -fx-border-width: 2; -fx-border-color: #ffffff; -fx-opacity: 0.6;" text="Chercher" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="850.0" layoutY="15.0" mnemonicParsing="false" onAction="#loadEvents" prefHeight="44.0" prefWidth="166.0" style="-fx-background-color: none;" styleClass="btn-menu" text="  Evenements" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/map.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Oswald Regular" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutX="1020.0" layoutY="15.0" mnemonicParsing="false" onAction="#loadProfile" prefHeight="43.0" prefWidth="135.0" style="-fx-background-color: none;" styleClass="btn-menu" text="  Profile" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Oswald Regular" size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Content" layoutY="70.0" prefHeight="630.0" prefWidth="1200.0" />
+   </children>
+</AnchorPane>

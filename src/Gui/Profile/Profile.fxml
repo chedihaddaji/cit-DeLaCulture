@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="630.0" prefWidth="1200.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Profile.ProfileController">
+   <children>
+      <ImageView fitHeight="630.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/feather.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="630.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="CoverPicture" fitHeight="200.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true" />
+      <Label prefHeight="200.0" prefWidth="1200.0" style="-fx-border-color: #ffffff; -fx-border-width: 5;" />
+      <Button layoutX="974.0" layoutY="17.0" mnemonicParsing="false" onAction="#UpdateCoverPicture" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: #333333;" text="   photo de couverture" textFill="WHITE">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/cam_icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutY="200.0" prefHeight="60.0" prefWidth="1200.0" style="-fx-background-color: #ffffff; -fx-border-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="1200.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" y="-8.0">
+               <image>
+                  <Image url="@../../Images/bar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="1200.0" layoutX="1.0" opacity="0.82" pickOnBounds="true" preserveRatio="true" y="-8.0">
+               <image>
+                  <Image url="@../../Images/filter.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="274.0" layoutY="-5.0" mnemonicParsing="false" onAction="#aboutMe" prefHeight="63.0" prefWidth="178.0" style="-fx-background-color: none;" text="A propos de moi" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/info_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button layoutX="451.0" layoutY="-5.0" mnemonicParsing="false" onAction="#invites" prefHeight="63.0" prefWidth="170.0" style="-fx-background-color: none;" styleClass="profile-btn" text="Invitations" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/add_user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="versatile_btn" layoutX="621.0" layoutY="-5.0" mnemonicParsing="false" onAction="#contacts" prefHeight="63.0" prefWidth="170.0" style="-fx-background-color: none;" styleClass="profile-btn" text="Mes contacts" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/contact_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="reviews" layoutX="791.0" layoutY="-5.0" mnemonicParsing="false" onAction="#messagerie" prefHeight="63.0" prefWidth="153.0" style="-fx-background-color: none;" styleClass="profile-btn" text="Messagerie" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/chat.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="reviews1" layoutX="952.0" layoutY="-5.0" mnemonicParsing="false" onAction="#Mur" prefHeight="63.0" prefWidth="120.0" style="-fx-background-color: none;" styleClass="profile-btn" text="Mur" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/chat.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Circle fx:id="Avatar" fill="DODGERBLUE" layoutX="142.0" layoutY="150.0" radius="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+      <AnchorPane fx:id="AvatarFilter" layoutX="43.0" layoutY="51.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="197.0" fitWidth="199.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/Avatar_filter.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="85.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/cam_icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_updatePp" layoutX="4.0" layoutY="97.0" mnemonicParsing="false" onAction="#UpdateProfilePicture" prefHeight="200.0" prefWidth="197.0" style="-fx-background-color: transparent; -fx-padding: 110 0 0 0;" text="Modifier" textFill="WHITE" AnchorPane.bottomAnchor="0.0">
+               <font>
+                  <Font name="Oswald Medium" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="974.0" layoutY="127.0" mnemonicParsing="false" onAction="#updateProfile" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: #333333;" text="  Modifier mes infos" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font></Button>
+      <AnchorPane fx:id="Content" layoutY="266.0" prefHeight="370.0" prefWidth="1200.0" />
+      <Separator layoutY="260.0" prefHeight="5.0" prefWidth="1200.0" />
+   </children>
+</AnchorPane>

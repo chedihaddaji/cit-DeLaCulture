@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="830.0" style="-fx-background-color: transparent;" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Events.CreateEventController">
+   <children>
+      <DatePicker fx:id="EventDateStart" layoutX="630.0" layoutY="114.0" prefHeight="31.0" prefWidth="180.0" />
+      <DatePicker fx:id="EventDateEnd" layoutX="630.0" layoutY="164.0" prefHeight="31.0" prefWidth="180.0" />
+      <Button fx:id="btnAjouter" layoutX="380.0" layoutY="478.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #333333; -fx-background-radius: 30;" text="Confirmer" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="20.0" />
+         </font></Button>
+      <Label layoutX="55.0" layoutY="114.0" text="* Nom de l'évènement :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="164.0" text="* Description de l'évènement :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="471.0" layoutY="114.0" text="* Date de début :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="EventName" focusColor="WHITE" layoutX="265.0" layoutY="96.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold;" unFocusColor="#333333">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="EventDescription" focusColor="WHITE" layoutX="265.0" layoutY="146.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold;" unFocusColor="#333333">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="EventPlace" focusColor="WHITE" layoutX="265.0" layoutY="196.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold;" unFocusColor="#333333">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="EventNumPar" focusColor="WHITE" layoutX="630.0" layoutY="196.0" prefHeight="37.0" prefWidth="180.0" style="-fx-text-fill: #ffffff; -fx-font-weight: bold;" unFocusColor="#333333">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fx:id="Cover" fitHeight="150.0" fitWidth="750.0" layoutX="5.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true" x="55.0">
+         <image>
+            <Image url="@../../Images/default_event.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="63.0" layoutY="264.0" text="Photo de couverture :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="207.0" layoutY="258.0" mnemonicParsing="false" onAction="#chooseEventCover" prefHeight="39.0" prefWidth="155.0" style="-fx-background-color: transparent;" text="Sélectionner image" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="476.0" layoutY="164.0" text="* Date de fin :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="214.0" text="* Place  de l'évènement :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="214.0" text="* Nombre de place :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="UpText" layoutX="55.0" layoutY="14.0" prefHeight="52.0" prefWidth="429.0" text="Créer un nouveau évènement" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="264.0" text="* Catégorie :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="combo" focusColor="WHITE" layoutX="630.0" layoutY="260.0" prefHeight="31.0" prefWidth="180.0" unFocusColor="#333333" />
+   </children>
+</AnchorPane>

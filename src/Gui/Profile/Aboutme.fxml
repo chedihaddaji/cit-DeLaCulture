@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="1200.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Profile.AboutmeController">
+   <children>
+      <Label layoutX="142.0" layoutY="20.0" prefHeight="52.0" prefWidth="367.0" text="Informations Personnelles" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="37.0" />
+         </font>
+      </Label>
+      <Label fx:id="nom" layoutX="142.0" layoutY="150.0" prefHeight="23.0" prefWidth="300.0">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenom" layoutX="142.0" layoutY="180.0" prefWidth="300.0">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" layoutX="142.0" layoutY="210.0" prefWidth="300.0">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="telephone" layoutX="142.0" layoutY="240.0" prefWidth="300.0">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="sexe" layoutX="142.0" layoutY="270.0" maxWidth="300.0" prefWidth="300.0">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="naissance" layoutX="550.0" layoutY="210.0" prefWidth="300.0">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="interets" layoutX="550.0" layoutY="240.0" prefWidth="300.0">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="domaine" layoutX="550.0" layoutY="270.0" prefHeight="23.0" prefWidth="184.0">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="516.0" layoutY="133.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Label fx:id="sousdomaine" layoutX="550.0" layoutY="293.0" prefHeight="23.0" prefWidth="184.0">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="bio" layoutX="874.0" layoutY="122.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

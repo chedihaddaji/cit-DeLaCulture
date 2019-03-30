@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.InscriptionController">
+   <children>
+      <ImageView fx:id="bck" fitHeight="700.0" fitWidth="1200.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/feather.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="nom" layoutX="254.0" layoutY="134.0" prefHeight="36.0" prefWidth="284.0" unFocusColor="WHITE" />
+      <Label layoutX="48.0" layoutY="144.0" prefHeight="36.0" prefWidth="146.0" text="* Nom :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="194.0" prefHeight="36.0" prefWidth="146.0" text="* Prenom :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="244.0" prefHeight="36.0" prefWidth="146.0" text="* Email :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="294.0" prefHeight="36.0" prefWidth="146.0" text="* Mot de passe :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="344.0" prefHeight="36.0" prefWidth="146.0" text="* Telephone :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="394.0" prefHeight="36.0" prefWidth="169.0" text="* Type de compte :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="accountType" layoutX="254.0" layoutY="384.0" onAction="#load" prefHeight="31.0" prefWidth="284.0" unFocusColor="WHITE" />
+      <Separator layoutX="651.0" layoutY="69.0" orientation="VERTICAL" prefHeight="558.0" prefWidth="5.0" />
+      <Label layoutX="40.0" layoutY="70.0" prefHeight="71.0" prefWidth="387.0" text="Informations basiques :" textFill="#3f6e9a">
+         <font>
+            <Font name="Oswald Medium" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="48.0" layoutY="444.0" text="* Sexe :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="homme" layoutX="297.0" layoutY="444.0" mnemonicParsing="false" onAction="#h" text="Homme" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <JFXTextField fx:id="prenom" layoutX="254.0" layoutY="184.0" prefHeight="36.0" prefWidth="284.0" unFocusColor="WHITE" />
+      <JFXTextField fx:id="email" layoutX="254.0" layoutY="234.0" prefHeight="36.0" prefWidth="284.0" unFocusColor="WHITE" />
+      <JFXTextField fx:id="mdp" layoutX="254.0" layoutY="284.0" prefHeight="36.0" prefWidth="284.0" unFocusColor="WHITE" />
+      <JFXTextField fx:id="tel" layoutX="254.0" layoutY="334.0" prefHeight="36.0" prefWidth="284.0" unFocusColor="WHITE" />
+      <RadioButton fx:id="femme" layoutX="427.0" layoutY="444.0" mnemonicParsing="false" onAction="#f" text="Femme" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="685.0" layoutY="70.0" prefHeight="71.0" prefWidth="402.0" text="Informations Supplimentaires :" textFill="#3f6e9a">
+         <font>
+            <Font name="Oswald Medium" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="415.0" layoutY="565.0" mnemonicParsing="false" style="-fx-background-color: none; -fx-text-fill: #3f6e9a;" text="choisir photo" underline="true" />
+      <Label layoutX="59.0" layoutY="544.0" prefHeight="36.0" prefWidth="169.0" text="Photo de profile :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="142.0" fitWidth="139.0" layoutX="254.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/default-avatar.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="685.0" layoutY="151.0" prefHeight="36.0" prefWidth="169.0" text="Interets :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="1065.0" layoutY="612.0" mnemonicParsing="false" onAction="#Next" prefHeight="31.0" prefWidth="84.0" text="Suivant" />
+      <TextField fx:id="interets" layoutX="795.0" layoutY="154.0" prefHeight="31.0" prefWidth="355.0" />
+      <JFXCheckBox fx:id="Cmusique" checkedColor="#3f6e9a" layoutX="685.0" layoutY="217.0" onAction="#Int" text="Musique" textFill="WHITE" unCheckedColor="WHITE" />
+      <JFXCheckBox fx:id="Ccinema" checkedColor="#3f6e9a" layoutX="795.0" layoutY="217.0" onAction="#Int" text="Cinema" textFill="WHITE" unCheckedColor="WHITE" />
+      <JFXCheckBox fx:id="CTheatre" checkedColor="#3f6e9a" layoutX="887.0" layoutY="217.0" onAction="#Int" text="Theatre" textFill="WHITE" unCheckedColor="WHITE" />
+      <JFXCheckBox fx:id="CPeintre" checkedColor="#3f6e9a" layoutX="980.0" layoutY="217.0" onAction="#Int" text="Peinture" textFill="WHITE" unCheckedColor="WHITE" />
+      <JFXCheckBox fx:id="CDance" checkedColor="#3f6e9a" layoutX="1074.0" layoutY="217.0" onAction="#Int" text="Dance" textFill="WHITE" unCheckedColor="WHITE" />
+      <AnchorPane fx:id="toload" layoutX="665.0" layoutY="244.0" prefHeight="311.0" prefWidth="521.0">
+         <children>
+            <Label layoutX="14.0" layoutY="28.0" prefHeight="36.0" prefWidth="169.0" text="Piece d'identité :" textFill="WHITE">
+               <font>
+                  <Font name="Oswald Regular" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="86.0" prefHeight="36.0" prefWidth="219.0" text="Domaine Artistique :" textFill="WHITE">
+               <font>
+                  <Font name="Oswald Regular" size="25.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="Domaine" layoutX="217.0" layoutY="89.0" onAction="#loadSec" prefHeight="31.0" prefWidth="130.0" unFocusColor="WHITE" />
+            <Button layoutX="201.0" layoutY="31.0" mnemonicParsing="false" text="choisir photo" />
+            <JFXComboBox fx:id="SousDomaine" layoutX="365.0" layoutY="89.0" prefHeight="31.0" prefWidth="130.0" unFocusColor="WHITE" />
+            <Label layoutX="16.0" layoutY="149.0" prefHeight="36.0" prefWidth="69.0" text="Bio :" textFill="WHITE">
+               <font>
+                  <Font name="Oswald Regular" size="25.0" />
+               </font>
+            </Label>
+            <JFXTextArea fx:id="bio" layoutX="93.0" layoutY="167.0" prefHeight="122.0" prefWidth="402.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="48.0" layoutY="494.0" text="* Date de naissance :" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="date" layoutX="254.0" layoutY="494.0" prefHeight="31.0" prefWidth="284.0" />
+   </children>
+</AnchorPane>

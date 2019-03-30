@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="1200.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Contact.MyContactsController">
+   <children>
+      <Label layoutX="192.0" layoutY="25.0" prefHeight="52.0" prefWidth="367.0" text="Liste d'ami(e)s" textFill="WHITE">
+         <font>
+            <Font name="Oswald Regular" size="37.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="content" layoutX="192.0" layoutY="95.0" prefHeight="250.0" prefWidth="816.0" />
+   </children>
+</AnchorPane>

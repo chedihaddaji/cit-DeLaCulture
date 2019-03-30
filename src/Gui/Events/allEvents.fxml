@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="630.0" prefWidth="1200.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Events.AllEventsController">
+   <children>
+      <ImageView fitHeight="630.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/feather.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="880.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/music.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="860.0" layoutY="15.0" orientation="VERTICAL" prefHeight="602.0" prefWidth="4.0" />
+      <Label layoutX="880.0" layoutY="20.0" prefHeight="36.0" prefWidth="300.0" style="-fx-background-color: #ffffff;" textFill="#333333">
+         <font>
+            <Font name="Oswald Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="940.0" layoutY="20.0" prefHeight="36.0" prefWidth="180.0" text="Filter par catégorie" textFill="#333333">
+         <font>
+            <Font name="Oswald Regular" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="880.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/dance.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="880.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/peinture.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="880.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/cinema.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="880.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/thatre.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="canCenter" layoutX="15.0" layoutY="550.0" prefHeight="65.0" prefWidth="460.0" style="-fx-border-color: #ffffff; -fx-border-width: 2;">
+         <children>
+            <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#ShowAll" prefWidth="210.0" styleClass="btn-default" text="Tous les évenèments">
+               <font>
+                  <Font name="Oswald Regular" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="236.0" layoutY="13.0" mnemonicParsing="false" onAction="#recommended" prefWidth="210.0" styleClass="btn-default" text="évenèments recommandés">
+               <font>
+                  <Font name="Oswald Regular" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="optional" layoutX="493.0" layoutY="550.0" prefHeight="65.0" prefWidth="351.0" style="-fx-border-color: #ffffff; -fx-border-width: 2;">
+         <children>
+            <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#loadCreate" prefHeight="40.0" prefWidth="165.0" styleClass="btn-default" text="Créer un évenèment">
+               <font>
+                  <Font name="Oswald Regular" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="187.0" layoutY="13.0" mnemonicParsing="false" onAction="#showMine" prefHeight="40.0" prefWidth="144.0" styleClass="btn-default" text="Mes évenèments">
+               <font>
+                  <Font name="Oswald Regular" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="880.0" layoutY="64.0" mnemonicParsing="false" onAction="#showMusique" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: none;" text="Musique" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Oswald Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="880.0" layoutY="174.0" mnemonicParsing="false" onAction="#showDance" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: none;" text="Dance" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Oswald Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="880.0" layoutY="284.0" mnemonicParsing="false" onAction="#ShowPeintre" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: none;" text="Peinture" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Oswald Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="880.0" layoutY="394.0" mnemonicParsing="false" onAction="#showCinema" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: none;" text="Cinema" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Oswald Medium" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="880.0" layoutY="504.0" mnemonicParsing="false" onAction="#showTheatre" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: none;" text="Theatre" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Oswald Medium" size="20.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="Content" layoutX="15.0" layoutY="20.0" prefHeight="520.0" prefWidth="830.0" />
+   </children>
+</AnchorPane>

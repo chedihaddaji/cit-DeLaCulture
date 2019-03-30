@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 mars 2019, 17:30:16
+    Author     : Dell
+*/
+
+.btn-login{
+    -fx-background-color: #333333;
+    -fx-text-fill: #ffffff;
+}
+
+.btn-menu{
+    -fx-background-color: none;
+    -fx-border-color: #ffffff;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 2px;
+}
+
+.btn-menu:hover{
+    -fx-background-color: none;
+    -fx-border-color: #75c8f2;
+    -fx-text-fill: #75c8f2;
+    -fx-border-radius: 3px;
+}
+
+.btn-default{
+    -fx-background-color: #333333;
+    -fx-text-fill: #ffffff;
+}
+
+.btn-default:hover{
+    -fx-background-color: #ffffff ;
+    -fx-text-fill: #333333;
+}

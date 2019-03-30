@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="630.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="Gui.SearchController">
+   <children>
+      <ImageView fitHeight="630.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/feather.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="630.0" prefWidth="200.0" style="-fx-border-color: #ffffff; -fx-border-width: 2.5;">
+         <children>
+            <Label layoutX="20.0" layoutY="53.0" prefHeight="31.0" prefWidth="117.0" text="Filtrer par :" textFill="WHITE">
+               <font>
+                  <Font name="Oswald Medium" size="26.0" />
+               </font>
+            </Label>
+            <JFXCheckBox checkedColor="WHITE" layoutX="40.0" layoutY="217.0" text="Amateur d'art" textFill="#333333" unCheckedColor="#333333">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox checkedColor="WHITE" layoutX="40.0" layoutY="247.0" text="Artiste" textFill="#333333" unCheckedColor="#333333">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <Label layoutX="20.0" layoutY="317.0" prefHeight="31.0" prefWidth="177.0" text="Intérets" textFill="WHITE">
+               <font>
+                  <Font name="Oswald Regular" size="23.0" />
+               </font>
+            </Label>
+            <JFXCheckBox checkedColor="WHITE" layoutX="40.0" layoutY="371.0" text="Musique" textFill="#333333" unCheckedColor="#333333">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox checkedColor="WHITE" layoutX="40.0" layoutY="401.0" text="Cinema" textFill="#333333" unCheckedColor="#333333">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox checkedColor="WHITE" layoutX="40.0" layoutY="431.0" text="Theatre" textFill="#333333" unCheckedColor="#333333">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox checkedColor="WHITE" layoutX="40.0" layoutY="461.0" text="Peinure" textFill="#333333" unCheckedColor="#333333">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox checkedColor="WHITE" layoutX="40.0" layoutY="491.0" text="Dance" textFill="#333333" unCheckedColor="#333333">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <Label layoutX="20.0" layoutY="167.0" prefHeight="31.0" prefWidth="177.0" text="Role" textFill="WHITE">
+               <font>
+                  <Font name="Oswald Regular" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Content" layoutX="200.0" prefHeight="630.0" prefWidth="1000.0" />
+   </children>
+</AnchorPane>
